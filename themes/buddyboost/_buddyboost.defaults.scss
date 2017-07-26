@@ -1,0 +1,28 @@
+// (C) Copyright 2014-2016 Hewlett Packard Enterprise Development LP
+
+$brand-color: #6e47a7;
+$brand-neutral-colors: (#2a1c3e, #DC2878, #501EB4, #49516F);
+// $brand-accent-colors: (#00CCEB, #FF7D28);
+$brand-accent-colors: (#fdff32, #FF7D28);
+$brand-link-color: #865CD6;
+$brand-status-colors: (
+  critical: #FF324D,
+  error: #FF324D,
+  warning: #FFD602,
+  ok: #8CC800,
+  unknown: #a8a8a8,
+  disabled: #a8a8a8
+) !default;
+$brand-grey-colors: (#000001, #333333, #3B3B3B, #434343, #666666);
+
+$button-secondary-color: nth($brand-neutral-colors, 2);
+
+// $brand-font-family: 'Work Sans', Arial, sans-serif;
+$brand-font-family: 'Prompt', sans-serif; 
+
+// $brand-large-number-font-family: 'Work Sans', Arial, sans-serif;
+$brand-large-number-font-family: 'Prompt', sans-serif;
+
+$code-font-family: 'Prompt', sans-serif;
+$text-font-weight: 400;
+$text-strong-font-weight: 500;
