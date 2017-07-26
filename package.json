@@ -1,5 +1,5 @@
 {
-  "name": "grommet-css",
+  "name": "buddyboost-css",
   "version": "1.5.0",
   "description": "Standalone css for grommet ui library.",
   "main": "build/index.min.css",

@@ -1,0 +1,105 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.8.9
+3 info using node@v4.4.3
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/Teenoy/Documents/grometcss',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/Teenoy/.npm/buddyboost-css/1.5.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/Teenoy/.npm correctMkdir not in flight; initializing
+10 info lifecycle buddyboost-css@1.5.0~prepublish: buddyboost-css@1.5.0
+11 silly lifecycle buddyboost-css@1.5.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/Teenoy/.npm/buddyboost-css/1.5.0/package.tgz',
+12 verbose tar pack   '/Users/Teenoy/Documents/grometcss' ]
+13 verbose tarball /Users/Teenoy/.npm/buddyboost-css/1.5.0/package.tgz
+14 verbose folder /Users/Teenoy/Documents/grometcss
+15 verbose addLocalTarball adding from inside cache /Users/Teenoy/.npm/buddyboost-css/1.5.0/package.tgz
+16 verbose correctMkdir /Users/Teenoy/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd buddyboost-css@1.5.0
+18 verbose afterAdd /Users/Teenoy/.npm/buddyboost-css/1.5.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/Teenoy/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/Teenoy/.npm/buddyboost-css/1.5.0/package/package.json written
+21 silly publish { name: 'buddyboost-css',
+21 silly publish   version: '1.5.0',
+21 silly publish   description: 'Standalone css for grommet ui library.',
+21 silly publish   main: 'build/index.min.css',
+21 silly publish   scripts:
+21 silly publish    { build: 'node-sass index.scss build/index.min.css --output-style compressed --include-path ./node_modules',
+21 silly publish      'build:buddyboost': 'node-sass themes/buddyboost/index.scss build/buddyboost/index.min.css --output-style compressed --include-path ./node_modules',
+21 silly publish      start: 'node-sass index.scss build/index.min.css -w --output-style compressed --include-path ./node_modules' },
+21 silly publish   keywords: [ 'create-react-app', 'grommet' ],
+21 silly publish   author: { name: 'Mel van Londen' },
+21 silly publish   license: 'MIT',
+21 silly publish   devDependencies: { 'node-sass': '^4.5.1' },
+21 silly publish   dependencies: { grommet: '^1.5.0' },
+21 silly publish   readme: '# grommet-css\n\nCreated to use [grommet](https://github.com/grommet/grommet) with [create-react-app](https://github.com/facebookincubator/create-react-app). Grommet needs `scss` preprocessor and unless you `eject` there is no way to easily use with `create-react-app`.\n\n## Usage\n### As is\n```bash\nnpm install grommet-css\n# or\nyarn install grommet-css\n```\n\nin `App.js`\n```js\nimport \'../node_modules/grommet-css\'\n```\n\n### Custom\nYou can also fork this repo, make changes like including a different default grommet style in `index.scss` or tweaking grommet scss variables.\n\n#### Production\nUpdate the name in `package.json`, run `npm build`, then run `npm publish`\n\n#### Development\nUse `npm link`  to link your fork to your main repo and `npm start` to watch for changes.\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'b7174de63f1240c29c433173a7c6384a039eff78',
+21 silly publish   _id: 'buddyboost-css@1.5.0',
+21 silly publish   _shasum: '2d7e08d6ac5a5cee111f45bea7482444b8864cbf',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name buddyboost-css
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'buddyboost-css',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   name: 'buddyboost-css',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/buddyboost-css
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/Teenoy/.npm/buddyboost-css/1.5.0/package.tgz
+30 verbose request uri https://registry.npmjs.org/buddyboost-css
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 8:12:58 PM
+33 verbose request using bearer token for auth
+34 verbose request id ddefb81a2169fecf
+35 http request PUT https://registry.npmjs.org/buddyboost-css
+36 http 403 https://registry.npmjs.org/buddyboost-css
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Wed, 26 Jul 2017 13:13:00 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-sin18026-SIN',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1501074779.769401,VS0,VE1266',
+37 verbose headers   vary: 'Accept-Encoding, Accept' }
+38 verbose request invalidating /Users/Teenoy/.npm/registry.npmjs.org/buddyboost-css on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 1.5.0." : buddyboost-css
+40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+40 verbose stack     at emitTwo (events.js:87:13)
+40 verbose stack     at Request.emit (events.js:172:7)
+40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+40 verbose stack     at emitOne (events.js:82:20)
+40 verbose stack     at Request.emit (events.js:169:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
+41 verbose statusCode 403
+42 verbose pkgid buddyboost-css
+43 verbose cwd /Users/Teenoy/Documents/grometcss
+44 error Darwin 15.6.0
+45 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+46 error node v4.4.3
+47 error npm  v3.8.9
+48 error code E403
+49 error "You cannot publish over the previously published version 1.5.0." : buddyboost-css
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
